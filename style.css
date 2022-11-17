@@ -1,0 +1,111 @@
+body{
+    background-color: antiquewhite;
+}
+.heading{
+    text-align: center;
+    animation-name: heading-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes heading-anim{
+    50%{
+        transform: scaleX(1.7);
+    }
+    /* 100%{
+        transform: scaleX(1.7);
+    } */
+}
+.flexcontainer{
+    height: fit-content;
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.box{
+    height: 300px;
+    width: 250px;
+    background-color: tomato;
+    margin: 30px;
+    box-shadow: 3px 3px 4px grey;
+    /* justify-content: center; */
+    /* justify-content: center; */
+    /* justify-self: center; */
+}
+.txt{
+    position: relative;
+    top: 50px;
+}
+.h2{
+    position: relative;
+    top: 40px;
+    font-weight: bolder;
+    color: white;
+}
+.b1{
+    background-color: aquamarine;
+    text-align: center;
+}
+.html{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 3%;
+    top: 20px;
+}
+.read{
+    position: relative;
+    top: 70px;
+}
+button{
+    border: none;
+    border-radius:10px;
+    height: 30px;
+    width: 90px;
+    background-color: blue;
+    color: white;
+}
+.box:hover{
+    background-color: white;
+    background-color: blue;
+    color: white;
+}
+.read:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+@media (min-width:320px) and (max-width:465px){
+    .heading{
+        text-align: center;
+    }
+    .flexcontainer{
+        height: fit-content;
+        width: 476px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 40px;
+        
+    }
+    .box{
+        height:300px;
+        width: 250px;
+        margin-top: -20px;
+        margin-left:150px auto;
+    
+    }
+    .box:hover{
+        background-color: rgb(9, 166, 228);
+        color: green;
+    }
+    .txt:hover{
+        color: green;
+    }
+    .read:hover{
+        background-color: red;
+        color: blue;
+    }
+}
